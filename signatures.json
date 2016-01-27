@@ -1,0 +1,12 @@
+[ { "header": "The parties are signing this agreement on the dates by their signatures.",
+    "term": "Purchaser",
+    "information": [ "date", "email", "address" ] },
+  { "header": "The parties are signing this agreement on the dates by their signatures.",
+    "term": "Company",
+    "entities": [
+      { "name": "SomeCo, Inc.",
+        "form": "corporation",
+        "jurisdiction": "Delaware",
+        "by": "Chief Executive Officer" } ],
+    "information": [ "address", "email" ],
+    "name": "Susan Executive" } ]

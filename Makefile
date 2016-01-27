@@ -7,11 +7,12 @@ $(COMMONFORM):
 	npm install
 	npm shrinkwrap
 
-%.docx: %.cform %.title $(COMMONFORM)
+document.docx: document.cform signatures.json title $(COMMONFORM)
 	$(COMMONFORM) render \
 		--format docx \
 		--number outline \
-		--title "$(shell cat $*.title)" \
+		--title "$(shell cat title)" \
+		--signatures signatures.json
 		< $*.cform \
 		> $@
 
