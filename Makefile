@@ -4,7 +4,7 @@ TARGET=document
 all: $(TARGET).docx
 
 $(COMMONFORM):
-	npm install "commonform-cli@0.11.x"
+	npm install
 	npm shrinkwrap
 
 %.docx: %.cform %.title $(COMMONFORM)
